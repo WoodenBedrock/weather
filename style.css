@@ -1,9 +1,128 @@
-
-.box{
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
+label{
+    color:#ffcb90;
+    font: 20pt "Fira Sans", sans-serif;
 }
 
-#city.box{}
+input{
+    color:white;
+    font: 18pt "Fira Sans", sans-serif;
+}
+
+.search {
+    padding: 5px;
+    border-style: solid;
+    border-color: #023047;
+    border-radius: 20px;
+    background-color: rgba(0, 40, 49, 0.2);
+    display: grid;
+    grid-area: a;
+    grid-template-areas: 
+    'a a a a b';
+}
+
+#input {
+    text-align: center;
+    grid-area: a;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    border-radius: 50px;
+    transition: all 300ms ease-in-out;
+    background-color: transparent;
+}
+
+#input:focus, #input:hover{
+    outline: none;
+    background-color: lavender;
+}
+
+
+#submit{
+    background-color: transparent;
+    cursor: pointer;
+    grid-area: b;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    border-radius: 100px;
+    transition: all 300ms ease-in-out;
+}
+
+#submit:hover{
+    background-color: lavender;
+}
+
+
+html{
+    height: 100%;
+}
+
+
+body{
+    background-image: url(25501.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    padding: 3px;
+}
+
+#super{
+    grid-area: a;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "a"
+    "."
+    "."
+    "b"
+    "b";
+    z-index: 10;
+}
+
+#result{
+    background-color: rgba(0, 40, 49, 0.2);
+    border-style: solid;
+    border-color: #023047;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    grid-area: b;
+    display: grid;
+    margin: auto;
+    grid-template-areas: 
+    "b b c z z z i i i"
+    "d d d z z z i i i"
+    "t t t z z z i i i"
+    "t t t z z z y y y"
+    "x x x z z z y y y";
+}
+
+#city{
+    padding: 2px;
+    grid-area: b;
+    
+}
+#country{
+    padding: 2px;
+    padding-left: 8px;
+    grid-area: c;
+    justify-self: start;
+}
+#description{
+    padding-top: 2px;
+    padding-bottom: 30px;
+    grid-area: d;
+    font-size: 13pt;
+}
+#icon{
+    padding-left: 100px;
+    grid-area: i;
+}
+#tempC{
+    grid-area: t;
+}
