@@ -120,7 +120,7 @@ body{
     font-size: 13pt;
 }
 #icon{
-    padding-left: 100px;
+    /*padding-left: 100px;*/
     grid-area: i;
 }
 #tempC{
