@@ -31,6 +31,7 @@ function getWeather(x='Bangalore'){
         }
 
         fetchedData = JSON.parse(Http.responseText)
+        console.log(fetchedData)
         cityLabel.innerHTML = fetchedData.name
         countryLabel.innerHTML = fetchedData.sys.country
         tempCLabel.innerHTML = parseFloat(fetchedData.main.temp - 273).toFixed(0)+'°'
