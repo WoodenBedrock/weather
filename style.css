@@ -153,11 +153,11 @@ body {
     opacity: 0.75;
     color: rgba(63, 7, 19, 0.75);
 }
-
+/*
 .search:focus-within > input::placeholder{
     opacity: 0.75;
     color: rgba(63, 7, 19, 0.75);
-}
+}*/
 
 .search > input:focus{
     border-style: hidden;
