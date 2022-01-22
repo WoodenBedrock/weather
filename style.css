@@ -173,4 +173,10 @@ svg{
     border-style: hidden;
     outline: none;
     background-color: transparent;
+    transition: all 350ms ease-in-out;
 }
+
+.search > button:hover{
+    background-color: rgba(240, 210, 144, 0.4);
+}
+    
