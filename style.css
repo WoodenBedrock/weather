@@ -52,10 +52,8 @@ body {
 }
 
 #city{
-    display: block;
-    line-height: 20pt;
     margin-left: -10px;
-    margin-top: 5px;
+    margin-top: -10px;
     align-self: start;
     justify-self: start;
     font-size: 20pt;
