@@ -15,7 +15,7 @@ function titleCase(str) {
  }
 
 
-function getWeather(x='Bangalore'){
+function getWeather(x='Bhubaneswar'){
     var link = "https://api.openweathermap.org/data/2.5/weather?q="+x+"%20&appid=4d09cd0e0c359927e26a1df8e5a0de90"
     Http.open('GET', link)
     Http.send()
