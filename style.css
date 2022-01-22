@@ -80,8 +80,8 @@ body {
 #tempC{
     margin-left: -23px;
     font-weight: 990;
-    margin-top: 8px;
-    margin-bottom: -40px;
+    margin-top: 5px;
+    margin-bottom: -35px;
     justify-self: start;
     font-size: 60pt;
     grid-area: t;
@@ -96,8 +96,8 @@ body {
 }
 #icon{
     margin-left: -9px;
-    margin-top: -55px;
-    margin-bottom: -50px;
+    margin-top: -50px;
+    margin-bottom: -60px;
     padding-bottom: 5px;
     justify-self: start;
     align-self: end;
