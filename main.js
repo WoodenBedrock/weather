@@ -26,7 +26,7 @@ function getWeather(x='Bangalore'){
         }
 
         if (Http.status == 404) {
-            console.log('NO CITY')
+            console.log('NO CITY',link)
             return
         }
 
