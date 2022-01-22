@@ -52,7 +52,7 @@ body {
 }
 
 #city{
-    margin-left: -10px;
+    margin-left: -13px;
     margin-top: -10px;
     align-self: start;
     justify-self: start;
@@ -83,7 +83,7 @@ body {
 }
 
 #description{
-    margin-left: -20px;
+    margin-left: -21px;
     font-size: 20pt;
     justify-self: start;
     align-self: start;
