@@ -36,7 +36,7 @@ function getWeather(x='Bangalore'){
         tempCLabel.innerHTML = parseFloat(fetchedData.main.temp - 273).toFixed(0)+'°'
         descriptionLabel.innerHTML = titleCase(fetchedData["weather"][0]["description"])
         var iconcode = fetchedData.weather[0].icon
-        var iconurl = "http://openweathermap.org/img/wn/"+iconcode+"@4x.png"
+        var iconurl = "https://openweathermap.org/img/wn/"+iconcode+"@4x.png"
         icondiv.innerHTML = `<img src=${iconurl}>`
 
     }
