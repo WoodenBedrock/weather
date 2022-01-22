@@ -140,8 +140,14 @@ body {
 }
 
 .search > input::placeholder{
-    opacity: 0.8;
-    color: rgba(63, 7, 19, 0.8);
+    transition: all 350ms ease-in-out;
+    opacity: 0.5;
+    color: rgba(240, 210, 144, 0.5);
+}
+
+.search > input:focus::placeholder{
+    opacity: 0.75;
+    color: rgba(63, 7, 19, 0.75);
 }
 
 .search > input:focus{
