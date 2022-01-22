@@ -61,7 +61,7 @@ body {
     justify-self: start;
     font-size: 20pt;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: clip;
     grid-area: c;
     display: inline-block;
 }
