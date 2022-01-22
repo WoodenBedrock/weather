@@ -135,7 +135,7 @@ body {
 
 .search > input::placeholder{
     opacity: 0.8;
-    color: rgba(63, 7, 19, 0.6);
+    color: rgba(222, 130, 77, 0.1);
 }
 
 .search > input:focus{
