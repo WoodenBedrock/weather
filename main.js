@@ -17,7 +17,7 @@ function titleCase(str) {
 
 
 function getWeather(x='Bangalore'){
-    var link = "api.openweathermap.org/data/2.5/weather?q="+x+"&appid="+apiId
+    var link = "https://api.openweathermap.org/data/2.5/weather?q="+x+"&appid="+apiId
     Http.open('GET', link)
     Http.send()
     Http.onreadystatechange = function () {
@@ -26,7 +26,7 @@ function getWeather(x='Bangalore'){
         }
 
         if (Http.status == 404) {
-            console.log('NO CITY',link,Http.status,Http.responseText)
+            console.log('NO CITY',link,Http.status,Http.responseText,"out")
             return
         }
 
