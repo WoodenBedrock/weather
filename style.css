@@ -53,14 +53,14 @@ body {
 }
 
 #city{
-    font-weight: 650;
+    font-weight: 600;
     max-width: 130px;
     white-space: nowrap;
     margin-left: -17px;
     margin-top: -10px;
     align-self: start;
     justify-self: start;
-    font-size: 20pt;
+    font-size: 21pt;
     overflow: hidden;
     text-overflow: clip;
     grid-area: c;
