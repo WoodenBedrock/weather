@@ -56,7 +56,9 @@ body {
     margin-top: -10px;
     align-self: start;
     justify-self: start;
-    font-size: min(15pt,20vw);
+    font-size: 20pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
     grid-area: c;
 }
 
