@@ -30,12 +30,12 @@ function getWeather(x='Bangalore'){
             return
         }
 
+        fetchedData = JSON.parse(Http.responseText)
         if (fetchedData.message == "Nothing to geocode") {
             console.log('NO CITY',link,Http.status,Http.responseText,"out")
             return
         }
 
-        fetchedData = JSON.parse(Http.responseText)
         console.log(fetchedData)
         cityLabel.innerHTML = fetchedData.name
         countryLabel.innerHTML = fetchedData.sys.country
