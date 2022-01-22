@@ -4,6 +4,7 @@ var countryLabel = document.getElementById('country')
 var tempCLabel = document.getElementById('tempC')
 var descriptionLabel = document.getElementById('description')
 var icondiv = document.getElementById('icon')
+var apiId = "508cadcf846952c94adda63195e5c5d5"
 const Http = new XMLHttpRequest()
 
 function titleCase(str) {
@@ -16,7 +17,7 @@ function titleCase(str) {
 
 
 function getWeather(x='Bhubaneswar'){
-    var link = "https://api.openweathermap.org/data/2.5/weather?q="+x+"%20&appid=4d09cd0e0c359927e26a1df8e5a0de90"
+    var link = "https://api.openweathermap.org/data/2.5/weather?q="+x+"%20&appid="+apiId
     Http.open('GET', link)
     Http.send()
     Http.onreadystatechange = function () {
