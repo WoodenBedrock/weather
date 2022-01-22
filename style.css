@@ -64,7 +64,8 @@ body {
 
 #country{
     margin-top: -6px;
-    margin-left: 2px;
+    padding-left: 2px;
+    margin-right: -2px;
     align-self: start;
     justify-self: start;
     font-size: 17pt;
