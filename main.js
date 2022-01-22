@@ -42,6 +42,13 @@ function getWeather(x='Bangalore'){
     }
 }
 
+document.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        getWeather(city.value);
+    }
+});
+
+
 getWeather()
 document.getElementById('submit').onclick = function(){getWeather(city.value)}
 
