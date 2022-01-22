@@ -61,6 +61,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     grid-area: c;
+    display: inline-block;
 }
 
 #country{
