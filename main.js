@@ -26,17 +26,17 @@ function getWeather(x='Bangalore'){
         }
 
         if (Http.status == 404) {
-            console.log('NO CITY',link,Http.status,Http.responseText,"out")
+            console.log('NO CITY')
             return
         }
 
         fetchedData = JSON.parse(Http.responseText)
         if (fetchedData.message == "Nothing to geocode") {
-            console.log('NO CITY',link,Http.status,Http.responseText,"out")
+            console.log('NO CITY')
             return
         }
 
-        console.log(fetchedData)
+        
         cityLabel.innerHTML = fetchedData.name
         countryLabel.innerHTML = fetchedData.sys.country
         tempCLabel.innerHTML = parseFloat(fetchedData.main.temp - 273).toFixed(0)+'°'
