@@ -20,7 +20,7 @@ function titleCase(str) {
 
 function animarrOn(){
     asvg.classList.add("ansvg")
-    setTimeout(animarrOff,855)
+    setTimeout(animarrOff,853)
     return
 }
 
