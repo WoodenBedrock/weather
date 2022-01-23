@@ -150,7 +150,7 @@ body {
     background-color: transparent;
     border-radius: 10px;
     transition: all 350ms ease-in-out;
-    color: var(--placeHolder);
+    color: var(--opc);
 }
 
 .search > input::placeholder{
