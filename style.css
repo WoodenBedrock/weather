@@ -179,6 +179,7 @@ body {
 svg{
     margin-top: 3px;
     transform: scale(1.5);
+    color: rgba(63, 7, 19, 0.8);
 }
 
 .search > button{
