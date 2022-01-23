@@ -20,7 +20,7 @@ function titleCase(str) {
 
 function animarrOn(){
     asvg.classList.add("ansvg")
-    setTimeout(animarrOff,750)
+    setTimeout(animarrOff,855)
     return
 }
 
@@ -37,7 +37,7 @@ function animInvOn() {
     if (cityIn != ""){
         city.placeholder = 'City Not Found'
     }
-    setTimeout(animInvOff, 2600)
+    setTimeout(animInvOff, 2555)
     return
 }
 
