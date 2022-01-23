@@ -4,6 +4,10 @@
 
 :root{
     --scaleAmt: 0.9;
+    --sehgt: 40px;
+    --searchBack: rgba(109, 250, 255, 0.534);
+    --blinkColor: rgba(139, 39, 39, 0.842);
+    --placeHolder: rgb(76, 0, 255);
 }
 
 html {
@@ -32,8 +36,8 @@ body {
 
 #result{
     border-radius: 24px;
-    box-shadow: 0px 0px 10px rgba(63, 7, 19, 1);
-    background-color: rgba(240, 210, 144, 0.5);
+    box-shadow: 0px 0px 10px 5px rgba(63, 7, 19, 1);
+    background-color: rgba(240, 210, 144, 0.733);
     padding: 15px;
     width: auto;
     max-width: 350px;
@@ -54,7 +58,7 @@ body {
 
 #city{
     font-weight: 600;
-    max-width: 130px;
+    max-width: 105px;
     white-space: nowrap;
     margin-left: -17px;
     margin-top: -8px;
@@ -69,7 +73,7 @@ body {
 
 #country{
     margin-top: -5px;
-    margin-left: -3px
+    margin-left: -3px;
     padding-left: 3px;
     margin-right: -5px;
     align-self: start;
@@ -105,24 +109,24 @@ body {
 }
 
 .search{
-    box-shadow: 0px 0px 10px rgba(63, 7, 19, 1);
-    display: table;
-    background-color: rgba(63, 7, 19, 0.25);
+    box-shadow: 0px 0px 10px 3px rgba(63, 7, 19, 1);
+    background-color: var(--searchBack);
     width: 100%;
     max-width: 350px;
-    height: 40px;
+    height: var(--sehgt);
     margin: 0 auto;
+    padding-top: 0px;
     border-radius: 10px;
-    transition: all 350ms ease-in-out;
+    transition: background-color 350ms ease-in-out;
     
 }
 
 .search:hover{
-    background-color: rgba(240, 210, 144, 0.4);    
+    --searchBack: rgba(133, 251, 255, 0.932);    
 }
 
 .search:focus-within{
-    background-color: rgba(240, 210, 144, 0.8);
+    --searchBack: rgba(240, 210, 144, 0.8);
 }
 
 .search:hover > input{
@@ -130,55 +134,53 @@ body {
 }
 
 .search:hover > input::placeholder{
-    color: rgba(63, 7, 19, 1);  
+    color: rgba(63, 7, 19, 0.75);  
 }
 
 .search > input{
-    display: table-cell;
-    vertical-align: middle;
-    padding-top: 3px;
-    font-size: 12pt;
-    height: 100%;
+    font-size: 20pt;
+    font-family: 'Dongle', sans-serif;
+    height: var(--sehgt);
     width: 75%;
     border-style: hidden;
     outline: none;
     background-color: transparent;
     border-radius: 10px;
     transition: all 350ms ease-in-out;
-    color: rgba(222, 130, 77, 0.53);
+    color: var(--placeHolder);
 }
 
 .search > input::placeholder{
-    transition: all 350ms ease-in-out;
+    font-family: 'Dongle', sans-serif;
+    font-size: 20pt;
+    font-weight: 1000;
     opacity: 0.5;
-    color: rgba(240, 210, 144, 0.5);
+    color: rgb(76, 0, 255);;
 }
 
 .search > input:focus::placeholder{
     opacity: 0.75;
-    color: rgba(63, 7, 19, 0.75);
+    color: var(--placeHolder);
 }
 
 .search:focus-within > input::placeholder{
     opacity: 0.75;
-    color: rgba(63, 7, 19, 0.75);
+    color: var(--placeHolder);
 }
 
 .search > input:focus{
     border-style: hidden;
-    color: rgba(63, 7, 19, 1);
+    color: var(--placeHolder);
 }
 
 svg{
     margin-top: 3px;
-    transform: scale(1.8);
+    transform: scale(1.5);
 }
 
 .search > button{
-    display: table-cell;
-    vertical-align: middle;
-    padding-top: 2px;
-    height: 100%;
+    height: var(--sehgt);
+    color: rgb(76, 0, 255);
     width: 10%;
     border-style: hidden;
     outline: none;
@@ -187,6 +189,43 @@ svg{
 }
 
 .search > button:hover{
-    background-color: rgba(250, 210, 144, 0.25);
+    background-color: rgba(250, 209, 144, 0.473);
 }
+
+
+
+.searchEx{
+    animation-name: blinkbg;
+    animation-duration: 700ms;
+    animation-iteration-count: 3;
+}
+
+.ansvg{
+    animation-name: forward;
+    animation-duration: 700ms;
+    animation-iteration-count: 1;
+}
+  
+
+@keyframes blinkbg{
+    0% {background-color: var(--searchBack);}
+    50% {background-color: var(--blinkColor);}
+    100% {background-color: var(--searchBack);}
+}
+
     
+@keyframes forward{
+
+    0% {transform: translatex(0) scale(1.5);}
+    10% {transform: translate(5px,0.45px) scale(1.5);}
+    20% {transform: translate(5px,-0.45px) scale(1.5);}
+    30% {transform: translate(5px,0.45px) scale(1.5);}
+    40% {transform: translate(5px,-0.45px) scale(1.5);}
+    50% {transform: translate(5px,0.45px) scale(1.5);}
+    60% {transform: translate(5px,-0.45px) scale(1.5);}
+    70% {transform: translate(5px,0.45px) scale(1.5);}
+    80% {transform: translate(5px,-0.45px) scale(1.5);}
+    90% {transform: translate(5px,0.45px) scale(1.5);}
+    100% {transform: translateX(0px) scale(1.5);}
+
+}

@@ -1,10 +1,13 @@
-var city = document.getElementById('input')
+var city = document.getElementById('autoComplete')
+var cityIn = ''
 var cityLabel = document.getElementById('city')
 var countryLabel = document.getElementById('country')
 var tempCLabel = document.getElementById('tempC')
 var descriptionLabel = document.getElementById('description')
 var icondiv = document.getElementById('icon')
-var apiId = "508cadcf846952c94adda63195e5c5d5"
+var animSearch = document.getElementById('SS')
+var asvg = document.getElementById('asvg')
+const apiId = "508cadcf846952c94adda63195e5c5d5"
 const Http = new XMLHttpRequest()
 
 function titleCase(str) {
@@ -15,6 +18,36 @@ function titleCase(str) {
     return splitStr.join(' '); 
  }
 
+function animarrOn(){
+    asvg.classList.add("ansvg")
+    setTimeout(animarrOff,750)
+    return
+}
+
+function animarrOff(){
+    asvg.classList.remove("ansvg")
+    return
+}
+
+
+function animInvOn() {
+    cityIn = city.value
+    city.value = ""
+    animSearch.classList.add("searchEx")
+    if (cityIn != ""){
+        city.placeholder = 'City Not Found'
+    }
+    setTimeout(animInvOff, 2600)
+    return
+}
+
+function animInvOff() {
+    animSearch.classList.remove("searchEx")
+    city.focus()
+    city.placeholder = 'Enter City'
+    city.value = cityIn
+    return
+}
 
 function getWeather(x='Bangalore'){
     var link = "https://api.openweathermap.org/data/2.5/weather?q="+x+"&appid="+apiId
@@ -27,15 +60,18 @@ function getWeather(x='Bangalore'){
 
         if (Http.status == 404) {
             console.log('NO CITY')
+            animInvOn()
             return
         }
 
         fetchedData = JSON.parse(Http.responseText)
+        
         if (fetchedData.message == "Nothing to geocode") {
             console.log('NO CITY')
+            animInvOn()
             return
         }
-
+        animarrOn()
         
         cityLabel.innerHTML = fetchedData.name
         countryLabel.innerHTML = fetchedData.sys.country
@@ -49,7 +85,7 @@ function getWeather(x='Bangalore'){
 }
 
 document.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
+    if (event.key === 'Enter') {
         getWeather(city.value);
     }
 });
@@ -57,5 +93,3 @@ document.addEventListener("keyup", function(event) {
 
 getWeather()
 document.getElementById('submit').onclick = function(){getWeather(city.value)}
-
-
