@@ -196,13 +196,13 @@ svg{
 
 .searchEx{
     animation-name: blinkbg;
-    animation-duration: 700ms;
+    animation-duration: 850ms;
     animation-iteration-count: 3;
 }
 
 .ansvg{
     animation-name: forward;
-    animation-duration: 700ms;
+    animation-duration: 850ms;
     animation-iteration-count: 1;
 }
   
