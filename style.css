@@ -5,7 +5,7 @@
 :root{
     --scaleAmt: 0.9;
     --sehgt: 40px;
-    --searchBack: rgba(109, 250, 255, 0.45);
+    --searchBack: rgba(0, 255, 255, 0.3);
     --blinkColor: rgba(139, 39, 39, 0.842);
     --placeHolder: rgb(76, 0, 255);
 }
