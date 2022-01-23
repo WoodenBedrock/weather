@@ -6,9 +6,9 @@
     --scaleAmt: 0.9;
     --sehgt: 40px;
     --searchBack: rgba(0, 255, 255, 0.5);
-    --focusSc: rbga(0,255,255,0.8);
+    --focusSc: rgba(76, 63, 145, 0.8);
     --blinkColor: rgba(139, 39, 39, 0.842);
-    --placeHolder: rgb(76, 0, 255);
+    --placeHolder: rgba(244, 89, 5, 1);
 }
 
 html {
@@ -131,11 +131,11 @@ body {
 }
 
 .search:hover > input{
-    color: rgba(63, 7, 19, 1);  
+    color: var(--placeHolder); 
 }
 
 .search:hover > input::placeholder{
-    color: rgba(63, 7, 19, 0.75);  
+    color: var(--placeHolder);
 }
 
 .search > input{
