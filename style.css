@@ -142,6 +142,7 @@ body {
 
 .search > input{
     font-size: 20pt;
+    font-weight: 1000;
     font-family: 'Dongle', sans-serif;
     height: var(--sehgt);
     width: 75%;
