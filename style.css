@@ -5,7 +5,8 @@
 :root{
     --scaleAmt: 0.9;
     --sehgt: 40px;
-    --searchBack: rgba(0, 255, 255, 0.6);
+    --searchBack: rgba(0, 255, 255, 0.5);
+    --focusSc: rbga(0,255,255,0.8);
     --blinkColor: rgba(139, 39, 39, 0.842);
     --placeHolder: rgb(76, 0, 255);
 }
@@ -126,7 +127,7 @@ body {
 }
 
 .search:focus-within{
-    --searchBack: rgba(240, 210, 144, 0.8);
+    --searchBack: var(focusSc);
 }
 
 .search:hover > input{
