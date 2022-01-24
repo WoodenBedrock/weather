@@ -201,8 +201,8 @@ svg{
 
 .searchEx{
     animation-name: blinkbg;
-    animation-duration: 2700ms;
-    animation-iteration-count: 1;
+    animation-duration: 900ms;
+    animation-iteration-count: 3;
     animation-timing-function: cubic-bezier(0,.67,.53,.87) !important;
 }
 
@@ -215,7 +215,7 @@ svg{
 
 @keyframes blinkbg{
     0% {background-color: var(--searchBack);}
-    10% {background-color: var(--blinkColor);}
+    60% {background-color: var(--blinkColor);}
     100% {background-color: var(--searchBack);}
 }
 
