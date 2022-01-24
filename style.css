@@ -5,8 +5,8 @@
 :root{
     --scaleAmt: 0.9;
     --sehgt: 40px;
-    --searchBack: rgba(234, 154, 187, 0.55);
-    --focusSc: rgba(0, 255, 255, 0.8);
+    --searchBack: rgba(234, 154, 187, 0.5);
+    --focusSc: rgba(0, 255, 255, 0.65);
     --shv: rgba(0, 255, 255, 0.5);
     --blinkColor: rgba(139, 39, 39, 0.842);
     --placeHolder: rgba(76, 0, 255,0.7);
