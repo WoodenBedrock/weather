@@ -37,7 +37,7 @@ function animInvOn() {
     if (cityIn != ""){
         city.placeholder = 'City Not Found'
     }
-    setTimeout(animInvOff, 1951)
+    setTimeout(animInvOff, 2551)
     return
 }
 
