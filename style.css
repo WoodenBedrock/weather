@@ -215,7 +215,7 @@ svg{
 
 @keyframes blinkbg{
     0% {background-color: var(--searchBack);}
-    50% {background-color: var(--blinkColor);}
+    5% {background-color: var(--blinkColor);}
     100% {background-color: var(--searchBack);}
 }
 
