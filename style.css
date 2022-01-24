@@ -203,7 +203,7 @@ svg{
     animation-name: blinkbg;
     animation-duration: 900ms;
     animation-iteration-count: 3;
-    animation-timing-function: cubic-bezier(0,.67,.53,.87) !important;
+    animation-timing-function: ease-in-out !important;
 }
 
 .ansvg{
@@ -215,7 +215,7 @@ svg{
 
 @keyframes blinkbg{
     0% {background-color: var(--searchBack);}
-    60% {background-color: var(--blinkColor);}
+    50% {background-color: var(--blinkColor);}
     100% {background-color: var(--searchBack);}
 }
 
