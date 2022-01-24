@@ -38,9 +38,10 @@ body {
 }
 
 #result{
+    backdrop-filter: blur(5px);
     border-radius: 24px;
-    box-shadow: 0px 0px 20px 4px rgba(63, 7, 19, 1);
-    background-color: rgba(240, 210, 144, 0.653);
+    box-shadow: 0px 0px 20px 4px rgba(63, 7, 19, 0.8);
+    background-color: rgba(240, 210, 144, 0.253);
     padding: 15px;
     width: auto;
     max-width: 350px;
