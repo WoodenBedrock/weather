@@ -31,6 +31,7 @@ function animarrOff(){
 
 
 function animInvOn() {
+    city.blur()
     cityIn = city.value
     city.value = ""
     animSearch.classList.add("searchEx")
