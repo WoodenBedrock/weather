@@ -5,12 +5,12 @@
 :root{
     --scaleAmt: 0.9;
     --sehgt: 40px;
-    --searchBack: rgba(234, 154, 187, 0.65);
+    --searchBack: rgba(234, 154, 187, 0.55);
     --focusSc: rgba(0, 255, 255, 0.8);
     --shv: rgba(0, 255, 255, 0.5);
     --blinkColor: rgba(139, 39, 39, 0.842);
-    --placeHolder: rgb(76, 0, 255);
-    --opc: rgba(56, 20, 96, 0.6);
+    --placeHolder: rgba(76, 0, 255,0.7);
+    --opc: rgba(56, 20, 96, 0.7);
 }
 
 html {
