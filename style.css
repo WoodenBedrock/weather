@@ -13,6 +13,10 @@
     --opc: rgba(56, 20, 96, 0.7);
 }
 
+input{
+    text-decoration: none;
+}
+
 html {
     height: 100%;
     width: 100%;
